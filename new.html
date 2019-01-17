@@ -1,0 +1,95 @@
+<html>
+<head>
+  <title>Login-ShopAt</title>
+<style>
+body{
+  background-image: url("w2.jpg");
+  background-size: cover;
+  opacity: 0.9;
+}
+  #heading{
+    width:100%;
+    height:80px;
+    background-color: rgb(10,20,15,1);
+      opacity:0.7;
+      position:absolute;
+      top:0px;
+      left:0px;
+}
+#left{
+  width:500px;
+  height:450px;
+  background-color:rgb(10,20,15,0.8);
+  opacity:0.9;
+  position:absolute;
+  top:150px;
+  left:500px;
+    border-radius:30px;
+    text-color:white;                                                                                                                                                       c76vfy
+}
+#left:hover{
+
+  box-shadow:6px 6px 140px rgba(190,200,220,0.8);
+
+}
+
+form{
+  margin-top:20px ;
+  margin-left:70px;
+}
+input{
+  width:350px;
+  height:40px;
+  margin-top:25px;
+  padding:10px;
+  text-align: center;
+  border:2px solid rgb(100,40,180);
+  border-radius: 10px;
+}
+img{
+  opacity:0.8;
+}
+ a{
+   color:rgb(240,60,200);
+   text-decoration:none;
+ }
+  </style>
+</head>
+<body>
+<div id="heading">
+ <font color="white" size="6" face="comic sans ms" style="text-shadow:1px 1px 5px blue; margin-top:10px; margin-left:70px;"><b>ShopAt</b></font>&nbsp;<font color="yellow" size="3" face="arial">Roorkee.com</font>
+ <br><a href="shopping.html"><font color=lightpink  size="4" style="margin-left:1300px;">Home</font></a>
+</div>
+
+<div id="left">
+ <center>  <font size="10" color="white">Login</font></center>
+
+<form id="loginform">
+
+  <input type="text" placeholder="Email/Phone No" name="email"><br>
+  <input type="password" placeholder="Password"><br>
+  <input type="button" value="Login" onClick="zest()" id="log"><br><br>
+<table>
+  <tr>
+<td width="152"><hr width="130" align="left" noshade></td>
+<td width="25"><font color="white">OR</font></td>
+<td width="152"><hr width="130" align="right" noshade></td>
+</tr></table>
+
+<a href="Signup-shopat.html"><input type="button" value="Sign up" ></a>
+<p name="lastline"></p>
+</form>
+</div>
+
+<script>
+  let x=document.getElementById("loginform");
+  let y=x.elements("email").value;
+  function zest(){
+   document.getElementById("lastline").innerHTML="You entered email/phone no: "+y;
+}
+
+</script>
+  </body>
+</html>
+
+<div
